@@ -1,0 +1,6 @@
+release.obj : release.c
+    cl -c -G2rs -AS -W3 -Ox release.c
+
+release.exe : release.obj release.def
+    link release, /align:16, NUL, os2, release
+    bind release

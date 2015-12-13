@@ -1,0 +1,9 @@
+NAME   BUP   WINDOWCOMPAT
+
+PROTMODE
+
+STUB 'os2stub.exe'
+
+STACKSIZE 2048
+
+

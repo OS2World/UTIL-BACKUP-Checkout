@@ -1,0 +1,6 @@
+cout.obj : cout.c
+    cl -c -G2rs -AC -W3 -Ox cout.c
+
+cout.exe : cout.obj cout.def
+    link cout, /align:16, NUL, os2, cout
+    bind cout

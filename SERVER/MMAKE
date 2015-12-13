@@ -1,0 +1,5 @@
+mmake.obj : mmake.c
+    cl -c -G2rs -ACw -W3 -Ox mmake.c
+
+mmake.exe : mmake.obj mmake.def
+    link mmake, /align:16, NUL, os2, mmake

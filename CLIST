@@ -1,0 +1,6 @@
+clist.obj : clist.c
+    cl -c -B2 C2L -G2rs -AC -W3 -Ox clist.c
+
+clist.exe : clist.obj clist.def
+    link clist, /align:16, NUL, os2, clist
+    bind clist

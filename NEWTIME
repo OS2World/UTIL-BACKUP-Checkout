@@ -1,0 +1,6 @@
+newtime.obj : newtime.c
+    cl -c -G2rs -AS -W3 -Ox newtime.c
+
+newtime.exe : newtime.obj newtime.def
+    link newtime, /align:16, NUL, os2, newtime
+    bind newtime

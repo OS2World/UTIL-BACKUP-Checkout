@@ -1,0 +1,5 @@
+bup.obj : bup.c
+    cl -c -G2rs -AS -W3 -Ox bup.c
+
+bup.exe : bup.obj bup.def
+    link bup, /align:16, NUL, os2, bup

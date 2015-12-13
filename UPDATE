@@ -1,0 +1,6 @@
+update.obj : update.c
+    cl -c -B2 C2L -G2rs -AC -W3 -Ox update.c
+
+update.exe : update.obj update.def
+    link update, /align:16, NUL, os2, update
+    bind update

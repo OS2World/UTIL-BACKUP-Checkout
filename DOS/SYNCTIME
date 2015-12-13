@@ -1,0 +1,5 @@
+synctime.obj : synctime.c
+    cl -c -Grs -AS -W3 -Ox synctime.c
+
+synctime.exe : synctime.obj
+    link synctime,,NUL,doslan;

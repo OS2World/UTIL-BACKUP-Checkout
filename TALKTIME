@@ -1,0 +1,6 @@
+talktime.obj : talktime.c
+    cl -c -G2rs -AS -W3 -Ox talktime.c
+
+talktime.exe : talktime.obj talktime.def
+    link talktime, /align:16, NUL, os2, talktime
+    bind talktime

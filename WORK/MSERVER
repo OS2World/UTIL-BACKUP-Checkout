@@ -1,0 +1,5 @@
+mserver.obj : mserver.c
+    cl -c -G2rs -ACw -W3 -Ox mserver.c
+
+mserver.exe : mserver.obj mserver.def
+    link mserver, /align:16, NUL, os2, mserver

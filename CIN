@@ -1,0 +1,6 @@
+cin.obj : cin.c
+    cl -c -B2 C2L -G2rs -AC -W3 -Ox cin.c
+
+cin.exe : cin.obj cin.def
+    link cin, /align:16, NUL, os2, cin
+    bind cin

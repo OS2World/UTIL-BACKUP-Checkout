@@ -1,0 +1,5 @@
+gettime.obj : gettime.c
+    cl -c -G2rs -ASw -W3 -Ox gettime.c
+
+gettime.exe : gettime.obj gettime.def
+    link gettime, /align:16, NUL, os2, gettime

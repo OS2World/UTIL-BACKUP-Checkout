@@ -1,0 +1,5 @@
+mdaemon.obj : mdaemon.c
+    cl -c -G2rs -ASw -W3 -Ox mdaemon.c
+
+mdaemon.exe : mdaemon.obj mdaemon.def
+    link mdaemon, /align:16, NUL, os2, mdaemon

@@ -1,0 +1,20 @@
+--------------------------------------------------------------------
+CHECKOUT
+Version: 1990
+Author: John Ridges
+License: Released as Public Domain by John Ridges on 2015/11/21
+--------------------------------------------------------------------
+
+This are some schedule backup related command line utilities for OS/2. 
+- BUP - Directory backup daemon
+- CIN - Network check-in program
+- CLIST - network check-out status program
+- COUT - network check-out program
+- DOLABEL - label the optical disk
+- GETIME - get time from modem daemon
+- NETLABEL - program to talk to the DOLABEL daemon
+- NEWTIME - program to talk to the GETTIME daemon
+- RELEASE - network release program
+- SYNCTIME - OS/2 mode clock synchronization program
+- TALKTIME - program to talk to the GETTIME daemon
+- UPDATE - network updating program

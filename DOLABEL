@@ -1,0 +1,5 @@
+dolabel.obj : dolabel.c
+    cl -c -G2rs -ASw -W3 -Ox dolabel.c
+
+dolabel.exe : dolabel.obj dolabel.def
+    link dolabel, /align:16, NUL, os2, dolabel
